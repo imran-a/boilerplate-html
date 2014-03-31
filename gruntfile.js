@@ -9,8 +9,10 @@ module.exports = function (grunt) {
         connect: {
             server: {
                 options: {
+                    hostname: 'localhost',
                     port: 8080,
                     base: './<%= pkg.name %>',
+                    open: true,
                     livereload: true
                 }
             }
